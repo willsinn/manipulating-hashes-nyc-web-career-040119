@@ -7,12 +7,12 @@ def second_challenge
   }
   
  groceries.values.recursive_flatten(array, results = [])
-  array.each do |element|
-    if element.class == Array
+  array.each do |item|
+    if item.class == Array
       recursive_flatten(element, results)
     else
-      results << element
-    end
+     return results << item
+    
   end
   results
 end
