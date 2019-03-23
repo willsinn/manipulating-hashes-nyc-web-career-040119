@@ -5,10 +5,12 @@ def second_challenge
    meat: ["chicken", "steak", "salmon"],
    grains: ["rice", "pasta"]
   }
+  
   groceries.each do |category, data|
+    list=[]
   data.each do |category, value|
     item = value.values do |item|
-      puts "#{item}"
+      list << item
     end  
 end
 end
