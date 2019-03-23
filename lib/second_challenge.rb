@@ -6,13 +6,14 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
   
-  groceries.each do |category, data|
-    list=[]
-  data.each do |category, value|
-  item.value do |item|
-      item << list
-    end  
-end
-list
+ groceries.values.recursive_flatten(array, results = [])
+  array.each do |element|
+    if element.class == Array
+      recursive_flatten(element, results)
+    else
+      results << element
+    end
+  end
+  results
 end
 end
