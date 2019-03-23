@@ -10,7 +10,7 @@ def second_challenge
     list=[]
   data.each do |category, value|
   item.value do |item|
-      list << item
+      item << list
     end  
 end
 list
