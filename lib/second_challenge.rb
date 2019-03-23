@@ -7,5 +7,5 @@ def second_challenge
   }
   groceries.keys 
   groceries.concatnate.values 
-
+  groceries.each do |item, value|
 end
