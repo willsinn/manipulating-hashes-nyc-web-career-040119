@@ -9,7 +9,7 @@ def second_challenge
   groceries.each do |category, data|
     list=[]
   data.each do |category, value|
-    item = value.values do |item|
+    item = category.values do |item|
       list << item
     end  
 end
