@@ -13,5 +13,6 @@ def second_challenge
       list << item
     end  
 end
+list
 end
 end
