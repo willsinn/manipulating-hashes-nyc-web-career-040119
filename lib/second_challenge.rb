@@ -9,5 +9,9 @@ def second_challenge
   groceries.concatnate.values 
   groceries.each do |category, data|
   data.each do |category, value|
-    item.values
+    item = value.values do |item|
+      puts "#{item}"
+    end  
+end
+end
 end
